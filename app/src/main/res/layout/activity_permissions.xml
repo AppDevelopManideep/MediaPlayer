@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Permissions">
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:id="@+id/allowicon"
+        android:src="@drawable/permission"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_below="@+id/allowicon"
+        android:text="@string/text1"
+        android:textSize="38sp"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:text="@string/text2"
+        android:textColor="@android:color/black"
+        android:padding="18dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text1"/>
+    <Button
+        android:id="@+id/allow_access"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow Access"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
