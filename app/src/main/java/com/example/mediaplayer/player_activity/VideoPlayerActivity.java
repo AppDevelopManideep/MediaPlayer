@@ -187,6 +187,7 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
             // Handle pause event
         }
 
+
         @Override
         public void onSkipToNext() {
             // Handle skip to next event
