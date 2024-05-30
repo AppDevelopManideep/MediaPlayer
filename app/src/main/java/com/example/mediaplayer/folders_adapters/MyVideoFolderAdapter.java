@@ -13,8 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mediaplayer.R;
-import com.example.mediaplayer.folder_files.MusicFiles;
-import com.example.mediaplayer.folder_files.VideoFiles;
+import com.example.mediaplayer.folder_files_from_storage.VideoFiles;
 import com.example.mediaplayer.modelclass_java.MediaFiles;
 
 import java.util.ArrayList;

@@ -12,14 +12,17 @@ import androidx.media3.session.LibraryResult;
 import androidx.media3.session.MediaLibraryService;
 import androidx.media3.session.MediaSession;
 import androidx.media3.session.SessionCommand;
+import androidx.media3.session.SessionCommands;
 import androidx.media3.session.SessionResult;
 
 import com.example.mediaplayer.R;
 import com.google.common.collect.ImmutableList;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
-import com.google.common.util.concurrent.MoreExecutors;
 
+import org.json.JSONException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,16 +30,22 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
 
     private Context context;
     private List<CommandButton> customLayoutCommandButtons;
-    private SessionCommandGroup mediaNotificationSessionCommands;
+    private SessionCommands mediaNotificationSessionCommands;
     private static final String CUSTOM_COMMAND_TOGGLE_SHUFFLE_MODE_ON = "android.media3.session.demo.SHUFFLE_ON";
     private static final String CUSTOM_COMMAND_TOGGLE_SHUFFLE_MODE_OFF = "android.media3.session.demo.SHUFFLE_OFF";
 
     @OptIn(markerClass = UnstableApi.class)
-    public DemoMediaLibrarySessionCallback(@NonNull Context context) {
+    public DemoMediaLibrarySessionCallback( Context context) throws JSONException, IOException {
         this.context = context;
 
         // Initialize MediaItemTree
-        MediaItemTree.initialize(context.getAssets());
+        try {
+            MediaItemTree.initialize(context.getAssets());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
 
         // Initialize customLayoutCommandButtons
         this.customLayoutCommandButtons = new ArrayList<>();
@@ -54,23 +63,23 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
                         .setIconResId(R.drawable.log)
                         .build()
         );
-
         // Initialize mediaNotificationSessionCommands
-        SessionCommandGroup.Builder builder = MediaSession.ConnectionResult.DEFAULT_SESSION_AND_LIBRARY_COMMANDS.buildUpon();
+      SessionCommands.Builder builder = MediaSession.ConnectionResult.DEFAULT_SESSION_AND_LIBRARY_COMMANDS.buildUpon();
         for (CommandButton commandButton : customLayoutCommandButtons) {
-            SessionCommand sessionCommand = commandButton.getSessionCommand();
+            SessionCommand sessionCommand = commandButton.sessionCommand;
             if (sessionCommand != null) {
-                builder.add(sessionCommand);
+               builder.add(sessionCommand);
+                //builder=sessionCommand;
+
             }
         }
+
         this.mediaNotificationSessionCommands = builder.build();
     }
 
-    // Define constants
-    private static final String CUSTOM_COMMAND_TOGGLE_SHUFFLE_MODE_ON = "android.media3.session.demo.SHUFFLE_ON";
-    private static final String CUSTOM_COMMAND_TOGGLE_SHUFFLE_MODE_OFF = "android.media3.session.demo.SHUFFLE_OFF";
 
-    @NonNull
+
+    @OptIn(markerClass = UnstableApi.class) @NonNull
     @Override
     public MediaSession.ConnectionResult onConnect(
             @NonNull MediaSession session, @NonNull MediaSession.ControllerInfo controller) {
@@ -88,14 +97,14 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
         return new MediaSession.ConnectionResult.AcceptedResultBuilder(session).build();
     }
 
-    @NonNull
+    @OptIn(markerClass = UnstableApi.class) @NonNull
     @Override
     public ListenableFuture<SessionResult> onCustomCommand(
             @NonNull MediaSession session,
             @NonNull MediaSession.ControllerInfo controller,
             @NonNull SessionCommand customCommand,
             @NonNull Bundle args) {
-        if (CUSTOM_COMMAND_TOGGLE_SHUFFLE_MODE_ON.equals(customCommand.getCustomAction())) {
+        if (CUSTOM_COMMAND_TOGGLE_SHUFFLE_MODE_ON.equals(customCommand.customAction)) {
             // Enable shuffling.
             session.getPlayer().setShuffleModeEnabled(true);
             // Change the custom layout to contain the `Disable shuffling` command.
@@ -104,7 +113,7 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
                     ImmutableList.of(customLayoutCommandButtons.get(1))
             );
             return Futures.immediateFuture(new SessionResult(SessionResult.RESULT_SUCCESS));
-        } else if (CUSTOM_COMMAND_TOGGLE_SHUFFLE_MODE_OFF.equals(customCommand.getCustomAction())) {
+        } else if (CUSTOM_COMMAND_TOGGLE_SHUFFLE_MODE_OFF.equals(customCommand.customAction)) {
             // Disable shuffling.
             session.getPlayer().setShuffleModeEnabled(false);
             // Change the custom layout to contain the `Enable shuffling` command.
@@ -117,18 +126,17 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
         return Futures.immediateFuture(new SessionResult(SessionResult.RESULT_ERROR_NOT_SUPPORTED));
     }
 
-    @NonNull
+    @OptIn(markerClass = UnstableApi.class) @NonNull
     @Override
     public ListenableFuture<LibraryResult<MediaItem>> onGetLibraryRoot(
             @NonNull MediaLibraryService.MediaLibrarySession session,
             @NonNull MediaSession.ControllerInfo browser,
             MediaLibraryService.LibraryParams params) {
         return Futures.immediateFuture(
-                LibraryResult.ofItem(MediaItemTree.getRootItem(), params),
-                MoreExecutors.directExecutor()
+                LibraryResult.ofItem(MediaItemTree.getRootItem(), params)
         );
     }
-    @NonNull
+    @OptIn(markerClass = UnstableApi.class) @NonNull
     @Override
     public ListenableFuture<LibraryResult<MediaItem>> onGetItem(
             @NonNull MediaLibraryService.MediaLibrarySession session,
@@ -137,18 +145,16 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
         MediaItem mediaItem = MediaItemTree.getItem(mediaId);
         if (mediaItem != null) {
             return Futures.immediateFuture(
-                    LibraryResult.ofItem(mediaItem, null),
-                    MoreExecutors.directExecutor()
+                    LibraryResult.ofItem(mediaItem, null)
             );
         }
         else {
             return Futures.immediateFuture(
-                    LibraryResult.ofError(LibraryResult.RESULT_ERROR_BAD_VALUE),
-                    MoreExecutors.directExecutor()
+                    LibraryResult.ofError(LibraryResult.RESULT_ERROR_BAD_VALUE)
             );
         }
     }
-    @NonNull
+    @OptIn(markerClass = UnstableApi.class) @NonNull
     @Override
     public ListenableFuture<LibraryResult<ImmutableList<MediaItem>>> onGetChildren(
             @NonNull MediaLibraryService.MediaLibrarySession session,
@@ -157,16 +163,14 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
             int page,
             int pageSize,
             MediaLibraryService.LibraryParams params) {
-        ImmutableList<MediaItem> children = MediaItemTree.getChildren(parentId);
+        List<MediaItem> children = MediaItemTree.getChildren(parentId);
         if (!children.isEmpty()) {
             return Futures.immediateFuture(
-                    LibraryResult.ofItemList(children, params),
-                    MoreExecutors.directExecutor()
+                    LibraryResult.ofItemList(children, params)
             );
         } else {
             return Futures.immediateFuture(
-                    LibraryResult.ofError(LibraryResult.RESULT_ERROR_BAD_VALUE),
-                    MoreExecutors.directExecutor()
+                    LibraryResult.ofError(LibraryResult.RESULT_ERROR_BAD_VALUE)
             );
         }
     }
@@ -178,7 +182,7 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
             @NonNull List<MediaItem> mediaItems) {
         return Futures.immediateFuture(resolveMediaItems(mediaItems));
     }
-    @NonNull
+    @OptIn(markerClass = UnstableApi.class) @NonNull
     @Override
     public ListenableFuture<MediaSession.MediaItemsWithStartPosition> onSetMediaItems(
             @NonNull MediaSession mediaSession,
@@ -188,17 +192,16 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
             long startPositionMs) {
         if (mediaItems.size() == 1) {
             // Try to expand a single item to a playlist.
-            MediaItemsWithStartPosition expandedPlaylist = maybeExpandSingleItemToPlaylist(mediaItems.get(0), startIndex, startPositionMs);
+            MediaSession.MediaItemsWithStartPosition expandedPlaylist = maybeExpandSingleItemToPlaylist(mediaItems.get(0), startIndex, startPositionMs);
             if (expandedPlaylist != null) {
                 return Futures.immediateFuture(expandedPlaylist);
             }
         }
         return Futures.immediateFuture(
-                new MediaItemsWithStartPosition(resolveMediaItems(mediaItems), startIndex, startPositionMs),
-                MoreExecutors.directExecutor()
+                new MediaSession.MediaItemsWithStartPosition(resolveMediaItems(mediaItems), startIndex, startPositionMs)
         );
     }
-    @NonNull
+    @OptIn(markerClass = UnstableApi.class) @NonNull
     private List<MediaItem> resolveMediaItems(@NonNull List<MediaItem> mediaItems) {
         List<MediaItem> playlist = new ArrayList<>();
         for (MediaItem mediaItem : mediaItems) {
@@ -216,29 +219,29 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
 
     @OptIn(markerClass = UnstableApi.class)
     private MediaSession.MediaItemsWithStartPosition maybeExpandSingleItemToPlaylist(
-            @NonNull MediaItem mediaItem,
+            MediaItem mediaItem,
             int startIndex,
             long startPositionMs) {
         List<MediaItem> playlist = new ArrayList<>();
         int indexInPlaylist = startIndex;
-        MediaItem parentMediaItem = MediaItemTree.getItem(mediaItem.getMediaId());
+        MediaItem parentMediaItem = MediaItemTree.getItem(mediaItem.mediaId);
         if (parentMediaItem != null) {
-            if (parentMediaItem.getMediaMetadata().isBrowsable() == Boolean.TRUE) {
+            if (parentMediaItem.mediaMetadata.isBrowsable == Boolean.TRUE) {
                 // Get children browsable item.
-                playlist = MediaItemTree.getChildren(parentMediaItem.getMediaId());
-            } else if (parentMediaItem.getRequestMetadata().getSearchQuery() == null) {
+                playlist = MediaItemTree.getChildren(parentMediaItem.mediaId);
+            } else if (parentMediaItem.requestMetadata.searchQuery == null) {
                 // Try to get the parent and its children.
-                String parentId = MediaItemTree.getParentId(parentMediaItem.getMediaId());
+                String parentId = MediaItemTree.getParentId(parentMediaItem.mediaId);
                 if (parentId != null) {
                     List<MediaItem> parentChildren = MediaItemTree.getChildren(parentId);
                     for (MediaItem item : parentChildren) {
-                        if (item.getMediaId().equals(mediaItem.getMediaId())) {
+                        if (item.mediaId.equals(mediaItem.mediaId)) {
                             playlist.add(MediaItemTree.expandItem(item));
                         } else {
                             playlist.add(item);
                         }
                     }
-                    indexInPlaylist = MediaItemTree.getIndexInMediaItems(parentMediaItem.getMediaId(), playlist);
+                    indexInPlaylist = MediaItemTree.getIndexInMediaItems(parentMediaItem.mediaId, playlist);
                 }
             }
         }
@@ -248,7 +251,7 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
         return null;
     }
 
-    @NonNull
+    @OptIn(markerClass = UnstableApi.class) @NonNull
     @Override
     public ListenableFuture<LibraryResult<Void>> onSearch(
             @NonNull MediaLibraryService.MediaLibrarySession session,
@@ -257,9 +260,9 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
             MediaLibraryService.LibraryParams params) {
         int searchResultSize = MediaItemTree.search(query).size();
         session.notifySearchResultChanged(browser, query, searchResultSize, params);
-        return Futures.immediateFuture(LibraryResult.ofVoid(), MoreExecutors.directExecutor());
+        return Futures.immediateFuture(LibraryResult.ofVoid());
     }
-    @NonNull
+    @OptIn(markerClass = UnstableApi.class) @NonNull
     @Override
     public ListenableFuture<LibraryResult<ImmutableList<MediaItem>>> onGetSearchResult(
             @NonNull MediaLibraryService.MediaLibrarySession session,
@@ -270,8 +273,8 @@ public class DemoMediaLibrarySessionCallback implements MediaLibraryService.Medi
             MediaLibraryService.LibraryParams params) {
         ImmutableList<MediaItem> searchResult = (ImmutableList<MediaItem>) MediaItemTree.search(query);
         return Futures.immediateFuture(
-                LibraryResult.ofItemList(searchResult, params),
-                MoreExecutors.directExecutor()
+                LibraryResult.ofItemList(searchResult, params)
+
         );
     }
 

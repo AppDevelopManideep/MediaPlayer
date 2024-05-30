@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements RadioItemListener
         viewPageAdapter=new TabPagerAdapter(this);//tab adapter class to operate based on positions
         viewPager2.setAdapter(viewPageAdapter);
         //when tab is selected
+
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

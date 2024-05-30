@@ -75,10 +75,10 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".folder_files.MusicFiles"
+            android:name=".folder_files_from_storage.MusicFiles"
             android:exported="false" />
         <activity
-            android:name=".folder_files.VideoFiles"
+            android:name=".folder_files_from_storage.VideoFiles"
             android:exported="false" />
 
         <activity

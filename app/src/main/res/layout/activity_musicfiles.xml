@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".folder_files.MusicFiles">
+    tools:context=".folder_files_from_storage.MusicFiles">
     <GridView
         android:id="@+id/music_gridview"
         android:layout_width="match_parent"
