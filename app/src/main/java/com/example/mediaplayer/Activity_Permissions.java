@@ -17,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.mediaplayer.Streaming.MainStreaming;
+
 public class Activity_Permissions extends AppCompatActivity {
 
     Button allow_btn;
@@ -44,7 +46,7 @@ public class Activity_Permissions extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(ContextCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.WRITE_EXTERNAL_STORAGE)== PackageManager.PERMISSION_GRANTED){
-                    startActivity(new Intent(Activity_Permissions.this,MainActivity.class));
+                    startActivity(new Intent(Activity_Permissions.this, MainStreaming.class));
                     finish();
                 }
                 else{
