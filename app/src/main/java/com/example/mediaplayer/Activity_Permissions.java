@@ -93,7 +93,7 @@ public class Activity_Permissions extends AppCompatActivity {
                     }
                 }
                 else{
-                    startActivity(new Intent(Activity_Permissions.this,MainActivity.class));
+                    startActivity(new Intent(Activity_Permissions.this,MainStreaming.class));
                     finish();
                 }
             }

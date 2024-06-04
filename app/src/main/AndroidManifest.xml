@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-sdk/>
+
+    <uses-sdk />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-
-
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="true"
@@ -23,11 +22,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediaPlayer"
         tools:targetApi="31">
+        <activity
+            android:name=".Activity_Permissions"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.gms.car.application"
             android:resource="@xml/auto_app_desc" />
-
-
 
         <activity
             android:name=".Practice"
@@ -40,27 +41,27 @@
                 <action android:name="android.media.browse.MediaBrowserService" />
             </intent-filter>
         </service>
+
         <activity
             android:name=".Streaming.PlayerActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Streaming.PlayableFolderActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Streaming.MainStreaming"
-            android:exported="true"/>
+            android:exported="true" />
 
         <service
             android:name=".Streaming.PlaybackService"
-            android:foregroundServiceType="mediaPlayback"
-            android:exported="true">
+            android:exported="true"
+            android:foregroundServiceType="mediaPlayback">
             <intent-filter>
-                <action android:name="androidx.media3.session.MediaLibraryService"/>
-                <action android:name="android.media.browse.MediaBrowserService"/>
-                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH"/>
+                <action android:name="androidx.media3.session.MediaLibraryService" />
+                <action android:name="android.media.browse.MediaBrowserService" />
+                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH" />
             </intent-filter>
         </service>
 
@@ -80,9 +81,8 @@
         <activity
             android:name=".folder_files_from_storage.VideoFiles"
             android:exported="false" />
-
         <activity
-            android:name=".Activity_Permissions"
+            android:name=".retrofit.MainRetrofit"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
