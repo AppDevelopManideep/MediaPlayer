@@ -4,7 +4,6 @@ import com.example.mediaplayer.retrofit.RetroPhoto;
 
 import java.util.List;
 
-import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -16,5 +15,5 @@ public interface GetDataService {
     Call<List<RetroPhoto>> getAllPhotos();
 
     @POST("/photos")
-    Call<String> sendPhotos(@Body RequestBody requestBody);
+    Call<String> sendPhotos(@Body RetroPhoto retroPhoto);
 }

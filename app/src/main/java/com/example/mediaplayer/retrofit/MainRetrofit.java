@@ -34,6 +34,7 @@ public class MainRetrofit extends AppCompatActivity {
         /*Create handle for the RetrofitInstance interface*/
         GetDataService service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
         Call<List<RetroPhoto>> call = service.getAllPhotos();
+
         //enqueue is used to run the thread synchronously
         call.enqueue(new Callback<List<RetroPhoto>>() {
             @Override
@@ -48,6 +49,24 @@ public class MainRetrofit extends AppCompatActivity {
                 Toast.makeText(MainRetrofit.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
             }
 
+        });
+
+        //post
+        //1,2,mani,ram,tre
+        RetroPhoto retroPhoto = new RetroPhoto(123, 1, "mani", "ramu", "madhu");
+        Call<String> postcall = service.sendPhotos(retroPhoto);
+        postcall.enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(Call<String> call, Response<String> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(MainRetrofit.this, "" + response.body(), Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<String> call, Throwable t) {
+                Toast.makeText(MainRetrofit.this, "" + t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+            }
         });
     }
 

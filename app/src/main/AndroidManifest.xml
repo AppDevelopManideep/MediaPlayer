@@ -82,7 +82,7 @@
             android:name=".folder_files_from_storage.VideoFiles"
             android:exported="false" />
         <activity
-            android:name=".retrofit.MainRetrofit"
+            android:name=".Streaming.MainStreaming"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
