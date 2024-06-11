@@ -146,6 +146,7 @@ import java.util.Map;
         // create subfolder with same artist, album, etc.
         for (int i = 0; i < mediaList.length(); i++) {
             addNodeToTree(mediaList.getJSONObject(i));
+
         }
     }
 

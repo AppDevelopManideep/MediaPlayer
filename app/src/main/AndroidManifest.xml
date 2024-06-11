@@ -51,7 +51,7 @@
             android:name=".Streaming.PlayableFolderActivity"
             android:exported="true" />
         <activity
-            android:name=".Streaming.MainStreaming"
+            android:name=".retrofit.MainRetrofit"
             android:exported="true" />
 
         <service

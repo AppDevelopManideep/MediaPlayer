@@ -13,16 +13,18 @@ import com.example.mediaplayer.R;
 import com.jakewharton.picasso.OkHttp3Downloader;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {
 
-    private List<RetroPhoto> dataList;
+   // private List<RetroPhoto> dataList;
+    List<JsonData> jsonDataList=new ArrayList<>() ;
     private Context context;
 
-    public CustomAdapter(Context context,List<RetroPhoto> dataList){
+    public CustomAdapter(Context context,List<JsonData> dataList){
         this.context = context;
-        this.dataList = dataList;
+        jsonDataList = dataList;
     }
 
     class CustomViewHolder extends RecyclerView.ViewHolder {
@@ -50,19 +52,23 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 
     @Override
     public void onBindViewHolder(CustomViewHolder holder, int position) {
-        holder.txtTitle.setText(dataList.get(position).getTitle());
+
+            holder.txtTitle.setText(jsonDataList.get(position).getTitle());
+
 
         Picasso.Builder builder = new Picasso.Builder(context);
         builder.downloader(new OkHttp3Downloader(context));
-        builder.build().load(dataList.get(position).getThumbnailUrl())
-                .placeholder((R.drawable.ic_launcher_background))
-                .error(R.drawable.ic_launcher_background)
-                .into(holder.coverImage);
+
+            builder.build().load(jsonDataList.get(position).getImage())
+                    .placeholder((R.drawable.ic_launcher_background))
+                    .error(R.drawable.ic_launcher_background)
+                    .into(holder.coverImage);
+
 
     }
 
     @Override
     public int getItemCount() {
-        return dataList.size();
+        return jsonDataList.size();
     }
 }

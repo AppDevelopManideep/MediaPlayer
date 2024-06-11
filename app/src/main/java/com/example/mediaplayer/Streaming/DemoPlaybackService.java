@@ -13,15 +13,15 @@ import androidx.annotation.Nullable;
 import androidx.annotation.OptIn;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
+import androidx.media3.common.AudioAttributes;
 import androidx.media3.common.Player;
 import androidx.media3.common.util.UnstableApi;
+import androidx.media3.exoplayer.ExoPlayer;
+import androidx.media3.exoplayer.util.EventLogger;
 import androidx.media3.session.MediaLibraryService;
 import androidx.media3.session.MediaSession;
 
 import com.example.mediaplayer.R;
-import com.google.android.exoplayer2.ExoPlayer;
-import com.google.android.exoplayer2.audio.AudioAttributes;
-import com.google.android.exoplayer2.util.EventLogger;
 
 import org.json.JSONException;
 
@@ -80,6 +80,7 @@ public class DemoPlaybackService extends MediaLibraryService {
     @Override
     public void onTaskRemoved(@Nullable Intent rootIntent) {
         ExoPlayer player = (ExoPlayer) mediaLibrarySession.getPlayer();
+        // androidx.media3.exoplayer.ExoPlayer player = (androidx.media3.exoplayer.ExoPlayer) mediaLibrarySession.getPlayer();
         if (!player.getPlayWhenReady() || player.getMediaItemCount() == 0) {
             stopSelf();
         }
@@ -99,9 +100,13 @@ public class DemoPlaybackService extends MediaLibraryService {
         super.onDestroy();
     }
 
-    private void initializeSessionAndPlayer() throws JSONException, IOException {
+    @UnstableApi private void initializeSessionAndPlayer() throws JSONException, IOException {
+
+
+
         ExoPlayer player = new ExoPlayer.Builder(this).setAudioAttributes(AudioAttributes.DEFAULT, true).build();
         player.addAnalyticsListener(new EventLogger());
+
 
         try {
             mediaLibrarySession = new MediaLibrarySession.Builder((MediaLibraryService) this, (Player) player, createLibrarySessionCallback())
