@@ -37,22 +37,30 @@ import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 
 public class MainStreaming extends AppCompatActivity {
-    private ListenableFuture<MediaBrowser> browserFuture;
+    private ListenableFuture<MediaBrowser> browserFuture ;
     private ListView mediaListView;
-    MediaBrowser browser;
+    MediaBrowser browser ;
+
+
     private MediaBrowser getBrowser() {
+
         if (browserFuture.isDone() && !browserFuture.isCancelled()) {
             try {
-                return browserFuture.get();
-            } catch (ExecutionException | InterruptedException e) {
-                e.printStackTrace(); // Handle the exception according to your needs
+                browser = browserFuture.get();
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
             }
+        } else {
+            browser = null;
         }
-        return null;
+        return browser;
     }
+
     private FolderMediaItemArrayAdapter mediaListAdapter;
     private final ArrayDeque<MediaItem> treePathStack = new ArrayDeque<>();
     private final List<MediaItem> subItemMediaList = new ArrayList<>();
+
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -61,6 +69,8 @@ public class MainStreaming extends AppCompatActivity {
         setContentView(R.layout.activity_main_streaming);
 
         mediaListView = findViewById(R.id.media_list_view);
+
+        initializeBrowser();
         mediaListAdapter = new FolderMediaItemArrayAdapter(this, R.layout.folder_items, subItemMediaList);
         mediaListView.setAdapter(mediaListAdapter);
         //passing selected album to the PlayableFolderActivity
@@ -138,6 +148,7 @@ public class MainStreaming extends AppCompatActivity {
         browserFuture.addListener(this::pushRoot, ContextCompat.getMainExecutor(this)); // here if operation is completed pushRoot() is called
     }
 
+
     private void releaseBrowser() {
         MediaBrowser.releaseFuture(browserFuture);
     }
@@ -163,8 +174,13 @@ public class MainStreaming extends AppCompatActivity {
                     }
                     if (result != null  && result.value!= null) {
                         List<MediaItem> children = result.value;
-                        subItemMediaList.addAll(children);
-                        mediaListAdapter.notifyDataSetChanged();
+                        /*subItemMediaList.addAll(children);
+                        mediaListAdapter.notifyDataSetChanged();*/
+                        runOnUiThread(() -> {
+                            subItemMediaList.addAll(children);
+                            mediaListAdapter.notifyDataSetChanged();
+                        });
+
                     }
                 },
                 ContextCompat.getMainExecutor(this));
@@ -188,7 +204,8 @@ public class MainStreaming extends AppCompatActivity {
     private void pushRoot() {
         if (!treePathStack.isEmpty()) return;
 
-        MediaBrowser browser = this.browser;
+       // browser = this.browser;
+        browser = getBrowser();
         if (browser == null) return;
 
         ListenableFuture<LibraryResult<MediaItem>> rootFuture = browser.getLibraryRoot(null);
