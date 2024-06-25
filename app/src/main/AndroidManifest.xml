@@ -12,6 +12,11 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
+    
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,9 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediaPlayer"
         tools:targetApi="31">
-        <activity
-            android:name=".Activity_Permissions"
-            android:exported="false" />
+
 
         <meta-data
             android:name="com.google.android.gms.car.application"
@@ -70,6 +73,10 @@
             android:configChanges="orientation|screenSize|layoutDirection"
             android:exported="false" />
         <activity
+            android:name=".player_activity.VideoPlayerActivity"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="false" />
         <activity
@@ -82,7 +89,7 @@
             android:name=".folder_files_from_storage.VideoFiles"
             android:exported="false" />
         <activity
-            android:name=".Streaming.MainStreaming"
+            android:name=".Activity_Permissions"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

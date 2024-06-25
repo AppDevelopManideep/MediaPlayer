@@ -2,8 +2,6 @@ package com.example.mediaplayer.player_activity;
 
 import static androidx.core.content.PackageManagerCompat.LOG_TAG;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,10 +9,11 @@ import android.support.v4.media.session.MediaControllerCompat;
 import android.support.v4.media.session.MediaSessionCompat;
 import android.support.v4.media.session.PlaybackStateCompat;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mediaplayer.R;
 import com.example.mediaplayer.modelclass_java.MediaFiles;
@@ -54,6 +53,8 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_video_player);
         videolist = (ArrayList<MediaFiles>) getIntent().getSerializableExtra("Files");
         playerView = findViewById(R.id.exoplayer_view);
+
+
 
         // Enable default playback controls
         playerView.setUseController(true);

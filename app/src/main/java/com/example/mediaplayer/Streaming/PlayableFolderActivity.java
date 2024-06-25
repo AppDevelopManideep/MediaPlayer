@@ -219,6 +219,8 @@ public class PlayableFolderActivity extends AppCompatActivity {
                 List<MediaItem> children = result.value;
                 subItemMediaList.clear();
                 subItemMediaList.addAll(children);
+
+               // notify();
                 mediaListAdapter.notifyDataSetChanged();
             }
         }, ContextCompat.getMainExecutor(this));
