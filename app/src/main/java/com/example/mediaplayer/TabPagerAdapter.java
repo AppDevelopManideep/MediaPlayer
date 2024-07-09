@@ -20,13 +20,13 @@ public class TabPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 0:
-                return new radio();
+                return new streaming();
             case 1:
                 return new folder_music();
             case 2:
                 return new folder_video();
             default:
-                return new radio();
+                return new streaming();
         }
 
     }

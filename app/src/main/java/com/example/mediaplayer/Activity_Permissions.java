@@ -34,6 +34,7 @@ public class Activity_Permissions extends AppCompatActivity {
         String value=preferences.getString("Allow","");//taking value from shared preferences
         if(value.equals("OK")){
             //navigate to next screen
+            startActivity(new Intent(Activity_Permissions.this, MainActivity.class));
         }
         else{
             //again this screen only
@@ -46,7 +47,7 @@ public class Activity_Permissions extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(ContextCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.WRITE_EXTERNAL_STORAGE)== PackageManager.PERMISSION_GRANTED){
-                    startActivity(new Intent(Activity_Permissions.this, MainStreaming.class));
+                    startActivity(new Intent(Activity_Permissions.this, MainActivity.class));
                     finish();
                 }
                 else{

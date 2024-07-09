@@ -1,7 +1,6 @@
-package com.example.mediaplayer.Streaming;
+package com.example.mediaplayer;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
@@ -21,12 +20,15 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 import androidx.media3.common.MediaItem;
 import androidx.media3.session.LibraryResult;
 import androidx.media3.session.MediaBrowser;
 import androidx.media3.session.SessionToken;
 
-import com.example.mediaplayer.R;
+import com.example.mediaplayer.Streaming.MainStreaming;
+import com.example.mediaplayer.Streaming.PlayableFolderActivity;
+import com.example.mediaplayer.Streaming.PlaybackService;
 import com.google.common.collect.ImmutableList;
 import com.google.common.util.concurrent.ListenableFuture;
 
@@ -36,12 +38,15 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 
-public class MainStreaming extends AppCompatActivity {
+
+
+public class streaming extends Fragment {
+
+
     private ListenableFuture<MediaBrowser> browserFuture ;
     private ListView mediaListView;
     MediaBrowser browser ;
-
-
+    //ActionBar actionBar = ((AppCompatActivity) requireActivity()).getSupportActionBar();
     private MediaBrowser getBrowser() {
 
         if (browserFuture.isDone() && !browserFuture.isCancelled()) {
@@ -55,36 +60,55 @@ public class MainStreaming extends AppCompatActivity {
         }
         return browser;
     }
-
-    private FolderMediaItemArrayAdapter mediaListAdapter;
+    private MainStreaming.FolderMediaItemArrayAdapter mediaListAdapter;
     private final ArrayDeque<MediaItem> treePathStack = new ArrayDeque<>();
     private final List<MediaItem> subItemMediaList = new ArrayList<>();
 
-
-
-    @SuppressLint("MissingInflatedId")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_streaming);
+    public void onViewCreated( View view,  Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        mediaListView = findViewById(R.id.media_list_view);
+        OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
+            @Override
+            public void handleOnBackPressed() {
+                // Handle back press event
+
+                popPathStack();
+
+            }
+        };
+
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), callback);
+    }
+
+
+
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_streaming,container,false);
+        mediaListView = view.findViewById(R.id.media_list_view);
 
         initializeBrowser();
-        mediaListAdapter = new FolderMediaItemArrayAdapter(this, R.layout.folder_items, subItemMediaList);
+        mediaListAdapter = new MainStreaming.FolderMediaItemArrayAdapter(getContext(), R.layout.folder_items, subItemMediaList);
+        mediaListView.setAdapter(mediaListAdapter);
+
         mediaListView.setAdapter(mediaListAdapter);
         //passing selected album to the PlayableFolderActivity
-        mediaListView.setOnItemClickListener((parent, view, position, id) -> {
+        mediaListView.setOnItemClickListener((parent, View, position, id) -> {
             MediaItem selectedMediaItem = Objects.requireNonNull(mediaListAdapter.getItem(position));
             if (Boolean.TRUE.equals(selectedMediaItem.mediaMetadata.isPlayable)) {
-                Intent intent = PlayableFolderActivity.createIntent(this, selectedMediaItem.mediaId);
+                Intent intent = PlayableFolderActivity.createIntent(getContext(), selectedMediaItem.mediaId);
                 startActivity(intent);
             } else {
                 pushPathStack(selectedMediaItem);
             }
         });
 
-        findViewById(R.id.open_player_floating_button)
+        view.findViewById(R.id.open_player_floating_button)
                 .setOnClickListener(v -> {
                     if (browser != null) {
                         try {
@@ -95,43 +119,29 @@ public class MainStreaming extends AppCompatActivity {
                     }
                 });
 
-        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
-            @Override
-            public void handleOnBackPressed() {
-                popPathStack();
-            }
-        });
+
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             // Check if VIBRATE (for notifications) permission is not granted
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.VIBRATE)
+            if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.VIBRATE)
                     != PackageManager.PERMISSION_GRANTED) {
                 // Request VIBRATE permission
-                ActivityCompat.requestPermissions(this,
+                ActivityCompat.requestPermissions(getActivity(),
                         new String[]{Manifest.permission.VIBRATE},
                         1);
             }
 
             // Check if WAKE_LOCK permission is not granted
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.WAKE_LOCK)
+            if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WAKE_LOCK)
                     != PackageManager.PERMISSION_GRANTED) {
                 // Request WAKE_LOCK permission
-                ActivityCompat.requestPermissions(this,
+                ActivityCompat.requestPermissions(getActivity(),
                         new String[]{Manifest.permission.WAKE_LOCK},
                         2);
             }
         }
 
-
-      /*  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q &&
-                (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
-                        != PackageManager.PERMISSION_GRANTED ) && (ContextCompat.checkSelfPermission(this, Manifest.permission.WAKE_LOCK)
-                != PackageManager.PERMISSION_GRANTED )  ) {
-            requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS,Manifest.permission.WAKE_LOCK}, 0);
-        }*/
-
-
-
+        return view;
 
 
     }
@@ -139,20 +149,19 @@ public class MainStreaming extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            onBackPressed();
+            requireActivity().onBackPressed();
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
-
     @Override
-    protected void onStart() {
+    public void onStart() {
         super.onStart();
         initializeBrowser();//connecting to mediabrowser
     }
 
     @Override
-    protected void onStop() {
+    public void onStop() {
         releaseBrowser();
         super.onStop();
     }
@@ -197,14 +206,13 @@ public class MainStreaming extends AppCompatActivity {
                     .show();
         }*/
     }
-
     private void initializeBrowser() {
         browserFuture =
                 new MediaBrowser.Builder(
-                        this,
-                        new SessionToken(this, new ComponentName(this, PlaybackService.class)))
+                        getContext(),
+                        new SessionToken(getContext(), new ComponentName(getContext(), PlaybackService.class)))
                         .buildAsync();
-        browserFuture.addListener(this::pushRoot, ContextCompat.getMainExecutor(this)); // here if operation is completed pushRoot() is called
+        browserFuture.addListener(this::pushRoot, ContextCompat.getMainExecutor(getContext())); // here if operation is completed pushRoot() is called
     }
 
 
@@ -216,7 +224,7 @@ public class MainStreaming extends AppCompatActivity {
         MediaBrowser browser = this.browser;
         if (browser == null) return;
 
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(treePathStack.size() != 1);
+        Objects.requireNonNull(((AppCompatActivity) requireActivity()).getSupportActionBar()).setDisplayHomeAsUpEnabled(treePathStack.size() != 1);
         ListenableFuture<LibraryResult<ImmutableList<MediaItem>>> childrenFuture =
                 browser.getChildren(mediaItem.mediaId, 0, Integer.MAX_VALUE, null);
 
@@ -235,14 +243,14 @@ public class MainStreaming extends AppCompatActivity {
                         List<MediaItem> children = result.value;
                         /*subItemMediaList.addAll(children);
                         mediaListAdapter.notifyDataSetChanged();*/
-                        runOnUiThread(() -> {
+                        requireActivity().runOnUiThread(() -> {
                             subItemMediaList.addAll(children);
                             mediaListAdapter.notifyDataSetChanged();
                         });
 
                     }
                 },
-                ContextCompat.getMainExecutor(this));
+                ContextCompat.getMainExecutor(getContext()));
     }
 
     private void pushPathStack(MediaItem mediaItem) {
@@ -253,7 +261,7 @@ public class MainStreaming extends AppCompatActivity {
     private void popPathStack() {
         treePathStack.removeLast();
         if (treePathStack.isEmpty()) {
-            finish();
+            requireActivity().finish();
             return;
         }
 
@@ -263,7 +271,7 @@ public class MainStreaming extends AppCompatActivity {
     private void pushRoot() {
         if (!treePathStack.isEmpty()) return;
 
-       // browser = this.browser;
+        // browser = this.browser;
         browser = getBrowser();
         if (browser == null) return;
 
@@ -283,7 +291,7 @@ public class MainStreaming extends AppCompatActivity {
                         pushPathStack(root);
                     }
                 },
-                ContextCompat.getMainExecutor(this));
+                ContextCompat.getMainExecutor(getContext()));
     }
 
     public static class FolderMediaItemArrayAdapter extends ArrayAdapter<MediaItem> {
@@ -317,3 +325,6 @@ public class MainStreaming extends AppCompatActivity {
     }
 
 }
+
+
+

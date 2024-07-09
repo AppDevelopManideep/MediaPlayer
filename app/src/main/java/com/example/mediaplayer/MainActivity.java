@@ -1,13 +1,13 @@
 package com.example.mediaplayer;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import android.os.Bundle;
-
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity implements RadioItemListener {
+public class MainActivity extends AppCompatActivity  {
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
     TabPagerAdapter viewPageAdapter;
@@ -54,8 +54,5 @@ public class MainActivity extends AppCompatActivity implements RadioItemListener
 
     }
 
-    @Override
-    public void onitemclick() {
 
-    }
 }
