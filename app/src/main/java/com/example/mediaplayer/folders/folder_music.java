@@ -3,25 +3,22 @@ package com.example.mediaplayer.folders;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
-
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.GridView;
 import android.widget.Toast;
 
+import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.mediaplayer.folders_adapters.MyMusicFolderAdapter;
 import com.example.mediaplayer.R;
+import com.example.mediaplayer.folders_adapters.MyMusicFolderAdapter;
 import com.example.mediaplayer.modelclass_java.MediaFiles;
 
 import java.util.ArrayList;
+
 
 
 public class folder_music extends Fragment {
@@ -86,7 +83,7 @@ public class folder_music extends Fragment {
 
         }
         else{
-            Toast.makeText(getContext(),"You clicked menu_item 1 ",Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(),"cursor = null ",Toast.LENGTH_LONG).show();
 
         }
         return mediaFilesArrayList;

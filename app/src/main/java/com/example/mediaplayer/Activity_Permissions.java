@@ -17,8 +17,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.mediaplayer.Streaming.MainStreaming;
-
 public class Activity_Permissions extends AppCompatActivity {
 
     Button allow_btn;
@@ -51,7 +49,7 @@ public class Activity_Permissions extends AppCompatActivity {
                     finish();
                 }
                 else{
-                    ActivityCompat.requestPermissions(Activity_Permissions.this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_MEDIA_VIDEO,Manifest.permission.READ_MEDIA_IMAGES,Manifest.permission.READ_MEDIA_IMAGES},STORAGE_PERMISSION);
+                    ActivityCompat.requestPermissions(Activity_Permissions.this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_MEDIA_VIDEO,Manifest.permission.READ_MEDIA_IMAGES,Manifest.permission.READ_MEDIA_IMAGES,Manifest.permission.READ_MEDIA_AUDIO,Manifest.permission.VIBRATE,Manifest.permission.WAKE_LOCK},STORAGE_PERMISSION);
                 }
               //  Toast.makeText(Activity_Permissions.this, "Allow Access", Toast.LENGTH_SHORT).show();
             }
@@ -107,5 +105,11 @@ public class Activity_Permissions extends AppCompatActivity {
             startActivity(new Intent(Activity_Permissions.this,MainActivity.class));
             finish();
         }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+
     }
 }

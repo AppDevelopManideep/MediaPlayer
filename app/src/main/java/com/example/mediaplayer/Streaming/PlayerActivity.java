@@ -36,6 +36,19 @@ import java.util.concurrent.ExecutionException;
 
 public class PlayerActivity extends AppCompatActivity {
     private ListenableFuture<MediaController> controllerFuture;
+    MediaController mediaController;
+    public MediaController getcontroller() {
+        if (controllerFuture.isDone() && !controllerFuture.isCancelled()) {
+            try {
+                return controllerFuture.get();
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+        } else {
+            return null;
+        }
+    }
     private PlayerView playerView;
     private ListView mediaItemListView;
     private MediaItemListAdapter mediaItemListAdapter;
@@ -101,13 +114,14 @@ public class PlayerActivity extends AppCompatActivity {
 
     private void setController() {
         MediaController controller = null;
-        try {
+        controller=getcontroller();
+        /*try {
             controller = controllerFuture.get();
         } catch (ExecutionException e) {
             throw new RuntimeException(e);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }
+        }*/
         if (controller == null) return;
 
         playerView.setPlayer(controller);
@@ -136,13 +150,14 @@ public class PlayerActivity extends AppCompatActivity {
 
     private void updateMediaMetadataUI() {
         MediaController controller = null;
-        try {
+        controller=getcontroller();
+       /* try {
             controller = this.controllerFuture.get();
         } catch (ExecutionException e) {
             throw new RuntimeException(e);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }
+        }*/
         if (controller == null || controller.getMediaItemCount() == 0) {
             TextView title = findViewById(R.id.media_title);
             title.setText(getString(R.string.waiting_for_metadata));
@@ -162,13 +177,14 @@ public class PlayerActivity extends AppCompatActivity {
 
     private void updateCurrentPlaylistUI() {
         MediaController controller = null;
-        try {
+        controller=getcontroller();
+       /* try {
             controller = this.controllerFuture.get();
         } catch (ExecutionException e) {
             throw new RuntimeException(e);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }
+        }*/
         if (controller == null) return;
         mediaItemList.clear();
         for (int i = 0; i < controller.getMediaItemCount(); i++) {

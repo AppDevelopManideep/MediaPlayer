@@ -13,22 +13,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.OptIn;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.media3.common.C;
+import androidx.media3.common.MediaItem;
+import androidx.media3.common.PlaybackException;
+import androidx.media3.common.Player;
+import androidx.media3.common.util.UnstableApi;
+import androidx.media3.common.util.Util;
+import androidx.media3.datasource.DefaultDataSourceFactory;
+import androidx.media3.exoplayer.ExoPlayer;
+import androidx.media3.exoplayer.source.ConcatenatingMediaSource;
+import androidx.media3.exoplayer.source.MediaSource;
+import androidx.media3.exoplayer.source.ProgressiveMediaSource;
+import androidx.media3.ui.PlayerView;
 
 import com.example.mediaplayer.R;
 import com.example.mediaplayer.modelclass_java.MediaFiles;
 import com.example.mediaplayer.modelclass_java.MyMediaPlayer;
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.PlaybackException;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.source.ConcatenatingMediaSource;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.source.ProgressiveMediaSource;
-import com.google.android.exoplayer2.ui.PlayerView;
-import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
-import com.google.android.exoplayer2.util.Util;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -36,12 +38,12 @@ import java.util.ArrayList;
 public class VideoPlayerActivity extends AppCompatActivity implements View.OnClickListener{
     private ArrayList<MediaFiles> videolist;
     private PlayerView playerView;
-    private SimpleExoPlayer player;
+    private ExoPlayer player;
     private int currentindex;
     MediaSessionCompat mediaSession;
     PlaybackStateCompat.Builder stateBuilder;
     MediaControllerCompat mediaController;
-    ImageView nextButton,previousButton;
+    ImageView nextButton,previousButton,pause,play,forward,rewind;
     TextView title;
 
     ConcatenatingMediaSource concatenatingMediaSource;
@@ -60,6 +62,7 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
         playerView.setUseController(true);
         nextButton=findViewById(R.id.exo_next);
         previousButton=findViewById(R.id.exo_prev);
+
         title=findViewById(R.id.video_title);
 
             // Create a MediaSessionCompat
@@ -79,7 +82,7 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
                             PlaybackStateCompat.ACTION_PLAY |
                                     PlaybackStateCompat.ACTION_PLAY_PAUSE);
             mediaSession.setPlaybackState(stateBuilder.build());
-        player = new SimpleExoPlayer.Builder(this).build();;
+        player = new ExoPlayer.Builder(this).build();;
         playerView.setPlayer(player);
 
 
@@ -102,10 +105,12 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
     }
 
 
+    @OptIn(markerClass = UnstableApi.class)
     private void playvideo(){
         String path = videolist.get(MyMediaPlayer.currentIndex).getPath();
         title.setText(videolist.get(MyMediaPlayer.currentIndex).getDisplayname());
         Uri uri =Uri.parse(path);
+
         DefaultDataSourceFactory dataSourceFactory = new DefaultDataSourceFactory(this, Util.getUserAgent(this,"app"));
         //this is used to play vedeo one after other without interruption
         concatenatingMediaSource = new ConcatenatingMediaSource();
@@ -117,7 +122,7 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
             concatenatingMediaSource.addMediaSource(mediaSource);
         }
         playerView.setPlayer(player);
-        playerView.setKeepScreenOn(true);
+        playerView.setKeepScreenOn(true);//to prevent the screen from dimming
         player.prepare(concatenatingMediaSource);
         player.seekTo(C.TIME_UNSET);
 
@@ -168,6 +173,11 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.exo_prev:
                 mediaController.getTransportControls().skipToPrevious();
+                break;
+            case R.id.exo_forward:
+                mediaController.getTransportControls().fastForward();
+
+
 
         }
 
@@ -178,6 +188,7 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
         @Override
         public void onPlay() {
             // Handle play event
+            mediaController.getTransportControls().play();
 
 
 
@@ -186,6 +197,7 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
         @Override
         public void onPause() {
             // Handle pause event
+            mediaController.getTransportControls().pause();
         }
 
 
@@ -213,6 +225,16 @@ public class VideoPlayerActivity extends AppCompatActivity implements View.OnCli
                 Toast.makeText(VideoPlayerActivity.this,"No Previous Video",Toast.LENGTH_SHORT).show();
                 finish();
             }
+        }
+
+        @Override
+        public void onFastForward(){
+            PlaybackStateCompat playbackState= mediaController.getPlaybackState();
+            if(playbackState!=null){
+                long currentPosition = playbackState.getPosition();
+                mediaController.getTransportControls().seekTo(currentPosition+10000);
+            }
+
         }
 
         @Override

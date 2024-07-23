@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_centerInParent="true"
-                android:src="@drawable/baseline_play_arrow_24" />
+                android:src="@drawable/baseline_pause_circle" />
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                 />
 
         </RelativeLayout>
-        
+
 
     </RelativeLayout>
 

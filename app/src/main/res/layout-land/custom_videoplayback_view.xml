@@ -37,7 +37,8 @@
         android:layout_height="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/baseline_more"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/video_playlist"
@@ -46,7 +47,8 @@
         app:layout_constraintRight_toLeftOf="@id/video_more"
 
         app:srcCompat="@drawable/baseline_playlist"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
 
     <TextView
@@ -83,7 +85,7 @@
 
         app:srcCompat="@drawable/baseline_lock_24"
 
-        />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/exo_rew"

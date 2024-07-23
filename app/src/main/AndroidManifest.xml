@@ -34,9 +34,6 @@
             android:name="com.google.android.gms.car.application"
             android:resource="@xml/auto_app_desc" />
 
-        <activity
-            android:name=".Practice"
-            android:exported="false" />
 
         <service
             android:name=".MyMediaBrowserService"
@@ -80,6 +77,20 @@
         <activity
             android:name=".SplashScreen"
             android:exported="false" />
+        <provider
+            android:name=".Streaming.BitmapContentProvider"
+            android:authorities="androidx.media3"
+            android:exported="true" />
+        <service
+            android:name=".Streaming.AutomotiveService"
+            android:foregroundServiceType="mediaPlayback"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaLibraryService"/>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />

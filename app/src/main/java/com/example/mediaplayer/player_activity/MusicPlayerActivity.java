@@ -4,15 +4,14 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.os.Bundle;
-import android.os.RemoteException;
+import android.os.Handler;
 import android.support.v4.media.MediaBrowserCompat;
-import android.support.v4.media.MediaMetadataCompat;
 import android.support.v4.media.session.MediaControllerCompat;
-import android.support.v4.media.session.PlaybackStateCompat;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -40,6 +39,26 @@ public class MusicPlayerActivity extends AppCompatActivity {
 
     private Class<MyMediaBrowserService> cls;
 
+    //to make any updates to the ui continously
+    Handler handler = new Handler();
+    Runnable updateSeekBarRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (mediaController != null) {
+                int currentPosition = (int) (mediaController.getPlaybackState().getPosition() / 1000); // Get current position in seconds
+                seekbar.setProgress(currentPosition);
+
+                int minutes = currentPosition / 60;
+                int seconds = currentPosition % 60;
+                String time = String.format("%d:%02d", minutes, seconds);
+                current_time.setText(time);
+
+                handler.postDelayed(this, 1000); // Update every second
+            }
+        }
+    };
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +69,13 @@ public class MusicPlayerActivity extends AppCompatActivity {
         current_time = findViewById(R.id.current_time);
         total_time = findViewById(R.id.total_time);
         seekbar = findViewById(R.id.seekbar);
+
         pause = findViewById(R.id.pause);
         next = findViewById(R.id.next);
         previous = findViewById(R.id.previous);
         music_icon = findViewById(R.id.music_icon);
         musiclist = (ArrayList<MediaFiles>) getIntent().getSerializableExtra("Files");//getting list of songs from folders
+        Toast.makeText(this,musiclist.get(MyMediaPlayer.currentIndex).getDuration(),Toast.LENGTH_LONG).show();
         serviceIntent = new Intent(this, cls);
         Bundle mediaData = new Bundle();
         mediaData.putSerializable("MusicList", musiclist);
@@ -66,6 +87,55 @@ public class MusicPlayerActivity extends AppCompatActivity {
                 new ComponentName(this, cls),
                 connectionCallbacks,
                 null);
+        seekbar
+                .setOnSeekBarChangeListener(
+                        new SeekBar
+                                .OnSeekBarChangeListener() {
+
+                            // When the progress value has changed
+                            @Override
+                            public void onProgressChanged(
+                                    SeekBar seekBar,
+                                    int progress,
+                                    boolean fromUser)
+                            {
+
+                                if (fromUser && mediaController != null) {
+                                    mediaController.getTransportControls().seekTo(progress * 1000);
+
+                                    // Seek to the corresponding position in milliseconds
+                                }
+
+                                // increment 1 in progress and
+                                // increase the textsize
+                                // with the value of progress
+                                int minutes = progress / 60;
+                                int seconds = progress % 60;
+                                String time = String.format("0%d:%02d", minutes,seconds);
+
+                                current_time.setText(time);
+                            }
+
+                            @Override
+                            public void onStartTrackingTouch(SeekBar seekBar)
+                            {
+
+                                // This method will automatically
+                                // called when the user touches the SeekBar
+                                handler.removeCallbacks(updateSeekBarRunnable); // Stop updating while user is dragging
+                            }
+
+                            @Override
+                            public void onStopTrackingTouch(SeekBar seekBar)
+                            {
+
+                                // This method will automatically
+                                // called when the user
+                                // stops touching the SeekBar
+                                handler.post(updateSeekBarRunnable); // Resume updating when user stops dragging
+                            }
+
+                        });
 
     }
 
@@ -81,9 +151,13 @@ public class MusicPlayerActivity extends AppCompatActivity {
                     //Register a callback to receive updates on playback state changes
                     // Set the MediaController for the MediaControllerCompat widget
                     MediaControllerCompat.setMediaController(MusicPlayerActivity.this, mediaController);
+
                     // Finish building the UI
                     buildTransportControls();
-                    mediaController.registerCallback(controllerCallback);
+                    //mediaController.registerCallback(controllerCallback);
+                    handler.post(updateSeekBarRunnable); // Start updating the SeekBar when player connected
+
+
                 }
 
                 @Override
@@ -117,12 +191,14 @@ public class MusicPlayerActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         mediaBrowser.connect();
+
     }
 
     @Override
     public void onResume() {
         super.onResume();
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
+
     }
 
     @Override
@@ -130,11 +206,10 @@ public class MusicPlayerActivity extends AppCompatActivity {
         super.onStop();
         // (see "stay in sync with the MediaSession")
         if (MediaControllerCompat.getMediaController(MusicPlayerActivity.this) != null) {
-            MediaControllerCompat.getMediaController(MusicPlayerActivity.this).unregisterCallback(controllerCallback);
+           // MediaControllerCompat.getMediaController(MusicPlayerActivity.this).unregisterCallback(controllerCallback);
         }
         mediaBrowser.disconnect();
-
-
+        handler.removeCallbacks(updateSeekBarRunnable); // Stop updating the SeekBar
     }
 
     protected void onDestroy() {
@@ -144,17 +219,25 @@ public class MusicPlayerActivity extends AppCompatActivity {
             mediaBrowser.disconnect();
         }
         stopService(serviceIntent);
+        handler.removeCallbacks(updateSeekBarRunnable); // Stop updating the SeekBar
+
     }
 
     // it is used to interact with the ui
     void buildTransportControls() {
         // Grab the view for the play/pause button
 
+
+       title.setText(musiclist.get(MyMediaPlayer.currentIndex).getDisplayname());
+       total_time.setText(timeConversion((Long.parseLong(musiclist.get(MyMediaPlayer.currentIndex).getDuration()))));
+
+        seekbar.setMax((Integer.parseInt(String.valueOf((musiclist.get(MyMediaPlayer.currentIndex).getDuration())))) / 1000);
+
         pause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                i = !i;
                 if (mediaController != null && i) {
-                    i = !i;
 
                     // Toggle between play and pause
                     MediaControllerCompat.getMediaController(MusicPlayerActivity.this)
@@ -164,9 +247,11 @@ public class MusicPlayerActivity extends AppCompatActivity {
                     pause.setImageResource(R.drawable.baseline_pause_circle);
                     title.setText(musiclist.get(MyMediaPlayer.currentIndex).getDisplayname());
                     total_time.setText(timeConversion((Long.parseLong(musiclist.get(MyMediaPlayer.currentIndex).getDuration()))));
+
+                   // seekbar.setMax((Integer.parseInt(String.valueOf((musiclist.get(MyMediaPlayer.currentIndex).getDuration())))) / 1000);
+
                     //title.setText(MediaControllerCompat.getMediaController(MusicPlayerActivity.this).getTransportControls().);
                 } else {
-                    i = !i;
 
                     MediaControllerCompat.getMediaController(MusicPlayerActivity.this)
                             .getTransportControls().pause();
@@ -182,6 +267,8 @@ public class MusicPlayerActivity extends AppCompatActivity {
                     MyMediaPlayer.currentIndex = MyMediaPlayer.currentIndex - 1;
                     title.setText(musiclist.get(MyMediaPlayer.currentIndex).getDisplayname());
                     total_time.setText(timeConversion((Long.parseLong(musiclist.get(MyMediaPlayer.currentIndex).getDuration()))));
+                    seekbar.setMax((Integer.parseInt(String.valueOf((musiclist.get(MyMediaPlayer.currentIndex).getDuration())))) / 1000);
+
                     MediaControllerCompat.getMediaController(MusicPlayerActivity.this)
                             .getTransportControls().skipToPrevious();
 
@@ -189,6 +276,8 @@ public class MusicPlayerActivity extends AppCompatActivity {
                     MyMediaPlayer.currentIndex = musiclist.size() - 1;
                     title.setText(musiclist.get(MyMediaPlayer.currentIndex).getDisplayname());
                     total_time.setText(timeConversion((Long.parseLong(musiclist.get(MyMediaPlayer.currentIndex).getDuration()))));
+                    seekbar.setMax((Integer.parseInt(String.valueOf((musiclist.get(MyMediaPlayer.currentIndex).getDuration())))) / 1000);
+
                     MediaControllerCompat.getMediaController(MusicPlayerActivity.this)
                             .getTransportControls().skipToPrevious();
                 }
@@ -202,6 +291,8 @@ public class MusicPlayerActivity extends AppCompatActivity {
                     MyMediaPlayer.currentIndex = MyMediaPlayer.currentIndex + 1;
                     title.setText(musiclist.get(MyMediaPlayer.currentIndex).getDisplayname());
                     total_time.setText(timeConversion((Long.parseLong(musiclist.get(MyMediaPlayer.currentIndex).getDuration()))));
+                    seekbar.setMax((Integer.parseInt(String.valueOf((musiclist.get(MyMediaPlayer.currentIndex).getDuration())))) / 1000);
+
                     MediaControllerCompat.getMediaController(MusicPlayerActivity.this)
                             .getTransportControls().skipToNext();
 
@@ -209,75 +300,12 @@ public class MusicPlayerActivity extends AppCompatActivity {
                     MyMediaPlayer.currentIndex = 0;
                     title.setText(musiclist.get(MyMediaPlayer.currentIndex).getDisplayname());
                     total_time.setText(timeConversion((Long.parseLong(musiclist.get(MyMediaPlayer.currentIndex).getDuration()))));
+                    seekbar.setMax((Integer.parseInt(String.valueOf((musiclist.get(MyMediaPlayer.currentIndex).getDuration())))) / 1000);
+
                     MediaControllerCompat.getMediaController(MusicPlayerActivity.this)
                             .getTransportControls().skipToPrevious();
                 }
             }
         });
-
-
-        seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                // Update UI or perform actions as seekbar progress changes
-                if (fromUser && mediaController != null) {
-                    mediaController.getTransportControls().seekTo(progress);
-                }
-
-
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-                // Called when user starts touching the seekbar
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                // Called when user stops touching the seekbar
-                // Get the seek position from seekbar and send seek command to MediaControllerCompat
-
-            }
-        });
-
-        // to get the state from the ,mediabrowser service
-        // mediaController.registerCallback(controllerCallback);
     }
-
-    // To receive callbacks from the media session every time its state or metadata changes,
-    final MediaControllerCompat.Callback controllerCallback =
-            new MediaControllerCompat.Callback() {
-                @Override
-                public void onMetadataChanged(MediaMetadataCompat metadata) {
-                    super.onMetadataChanged(metadata);
-                    // Update seekbar max duration based on metadata changes
-                    updateSeekbarMax(metadata);
-                }
-
-                @Override
-                public void onPlaybackStateChanged(PlaybackStateCompat state) {
-                    super.onPlaybackStateChanged(state);
-                    // Update seekbar based on playback state
-
-
-                }
-
-
-                //The following code snippet demonstrates a callback implementation that disconnects from the browser service when the media session is destroyed
-                @Override
-                public void onSessionDestroyed() {
-                    mediaBrowser.disconnect();
-                    // maybe schedule a reconnection using a new MediaBrowser instance
-                }
-            };
-
-    private void updateSeekbarMax(MediaMetadataCompat metadata) {
-        if (metadata != null) {
-            long duration = metadata.getLong(MediaMetadataCompat.METADATA_KEY_DURATION);
-            seekbar.setMax((int) duration);
-        }
-    }
-
-
 }

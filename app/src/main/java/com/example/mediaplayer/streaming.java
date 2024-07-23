@@ -1,12 +1,9 @@
 package com.example.mediaplayer;
 
-import android.Manifest;
 import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -18,7 +15,6 @@ import android.widget.TextView;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.media3.common.MediaItem;
@@ -26,7 +22,6 @@ import androidx.media3.session.LibraryResult;
 import androidx.media3.session.MediaBrowser;
 import androidx.media3.session.SessionToken;
 
-import com.example.mediaplayer.Streaming.MainStreaming;
 import com.example.mediaplayer.Streaming.PlayableFolderActivity;
 import com.example.mediaplayer.Streaming.PlaybackService;
 import com.google.common.collect.ImmutableList;
@@ -60,7 +55,7 @@ public class streaming extends Fragment {
         }
         return browser;
     }
-    private MainStreaming.FolderMediaItemArrayAdapter mediaListAdapter;
+    private FolderMediaItemArrayAdapter mediaListAdapter;
     private final ArrayDeque<MediaItem> treePathStack = new ArrayDeque<>();
     private final List<MediaItem> subItemMediaList = new ArrayList<>();
 
@@ -93,7 +88,7 @@ public class streaming extends Fragment {
         mediaListView = view.findViewById(R.id.media_list_view);
 
         initializeBrowser();
-        mediaListAdapter = new MainStreaming.FolderMediaItemArrayAdapter(getContext(), R.layout.folder_items, subItemMediaList);
+        mediaListAdapter = new FolderMediaItemArrayAdapter(getContext(), R.layout.folder_items, subItemMediaList);
         mediaListView.setAdapter(mediaListAdapter);
 
         mediaListView.setAdapter(mediaListAdapter);
@@ -121,7 +116,7 @@ public class streaming extends Fragment {
 
 
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+      /*  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             // Check if VIBRATE (for notifications) permission is not granted
             if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.VIBRATE)
                     != PackageManager.PERMISSION_GRANTED) {
@@ -139,7 +134,7 @@ public class streaming extends Fragment {
                         new String[]{Manifest.permission.WAKE_LOCK},
                         2);
             }
-        }
+        }*/
 
         return view;
 
@@ -166,7 +161,7 @@ public class streaming extends Fragment {
         super.onStop();
     }
 
-    @Override
+   /* @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
 
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -200,12 +195,8 @@ public class streaming extends Fragment {
                 // Handle other requestCode cases if any
                 break;
         }
-       /* super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (grantResults.length > 0 && (grantResults[0] != PackageManager.PERMISSION_GRANTED || grantResults[1]!=PackageManager.PERMISSION_GRANTED)) {
-            Toast.makeText(getApplicationContext(), R.string.notification_permission_denied, Toast.LENGTH_LONG)
-                    .show();
-        }*/
-    }
+
+    }*/
     private void initializeBrowser() {
         browserFuture =
                 new MediaBrowser.Builder(
