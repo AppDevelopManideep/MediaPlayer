@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/gridbackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/log"
+            android:id="@+id/foldericon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/folderName"
+                android:text="1 item"
+                android:textSize="16sp"
+                android:maxLines="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/folderPath"
+                android:text="Folder_Path"
+                android:textSize="16sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noOfFiles"
+                android:text="5 files"
+                android:textSize="16sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/foldermusic_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+
+        android:foregroundTint="@color/light_dark"
+        android:src="@drawable/menu"
+        />
+</RelativeLayout>

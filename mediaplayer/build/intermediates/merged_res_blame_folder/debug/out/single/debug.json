@@ -1,0 +1,314 @@
+[
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_fullscreen_exit_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_fullscreen_exit_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_gridbackground.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/gridbackground.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_forward.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_forward.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_folder_musicgridview.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/folder_musicgridview.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_activity_splash_screen.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_fragment_streaming.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/fragment_streaming.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_activity_playable_folder.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/activity_playable_folder.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_radiogridviewsongs.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/radiogridviewsongs.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_rewind.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_rewind.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout-land_activity_music_player.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout-land/activity_music_player.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_arrow_back_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_arrow_back_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_fullscreen_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_fullscreen_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_menu.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/menu.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/xml_automotive_app_desc.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/xml/automotive_app_desc.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_next.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_next.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_star_rate_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_star_rate_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_lock_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_lock_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_playable_items.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/playable_items.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_fragment_folder_video.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/fragment_folder_video.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_fragment_folder_music.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/fragment_folder_music.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_custom_videoplayback_view.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/custom_videoplayback_view.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_playlist_add_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_playlist_add_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_retrofit_recycleview.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/retrofit_recycleview.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout-land_activity_main.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout-land/activity_main.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_music_item.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/music_item.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_play.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_play.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_activity_main.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_divider.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/divider.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_videogridviewlayout.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/videogridviewlayout.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_fragment_usb.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/fragment_usb.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_activity_music_player.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/activity_music_player.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_skip_next_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_skip_next_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_pause_circle.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_pause_circle.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_activity_player.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/activity_player.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_play_arrow_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_play_arrow_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_foldericon.jpg.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/foldericon.jpg"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_unlock.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_unlock.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_tab_selected.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/tab_selected.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_usbgridview.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/usbgridview.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_permission.png.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/permission.png"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_custom_tab_layout.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/custom_tab_layout.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_activity_musicfiles.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/activity_musicfiles.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_fragment_video.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/fragment_video.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_activity_video_player.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/activity_video_player.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_bg_vector_asset.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/bg_vector_asset.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_pause.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_pause.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_folder_items.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/folder_items.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_artwork_placeholder.png.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/artwork_placeholder.png"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_tab_unselected.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/tab_unselected.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_activity_permissions.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/activity_permissions.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout-land_activity_video_player.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout-land/activity_video_player.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/xml_backup_rules.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_more.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_more.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout-land_custom_videoplayback_view.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout-land/custom_videoplayback_view.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_playlist.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_playlist.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_activity_main_streaming.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/activity_main_streaming.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/layout_playlist_items.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/layout/playlist_items.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/menu_menu_list.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/menu/menu_list.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_log.jpg.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/log.jpg"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_skip_previous_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_skip_previous_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_playlist_remove_24.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_playlist_remove_24.xml"
+    },
+    {
+        "merged": "com.example.mediaplayer-merged_res-41:/drawable_baseline_previous.xml.flat",
+        "source": "com.example.mediaplayer-main-43:/drawable/baseline_previous.xml"
+    }
+]

@@ -1,0 +1,6 @@
+com.example.mediaplayer.test.mediaplayer-core-1.6.1-0 C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\16e5ab2c7ef9a40fa675b0fee887d231\transformed\core-1.6.1\res
+com.example.mediaplayer.test.mediaplayer-androidTest-1 C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\build\generated\res\resValues\androidTest\debug
+com.example.mediaplayer.test.mediaplayer-androidTest-2 C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\build\generated\res\rs\androidTest\debug
+com.example.mediaplayer.test.mediaplayer-mergeDebugAndroidTestResources-3 C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.mediaplayer.test.mediaplayer-mergeDebugAndroidTestResources-4 C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.mediaplayer.test.mediaplayer-merged_res-5 C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\build\intermediates\merged_res\debugAndroidTest

@@ -1,0 +1,552 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1072879069efd070fb6992aa0ec3c2d9\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b929ab10fd806b94f86bd527f89dd0a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e5ed6143adbb4e76284add51ce427304\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\44fc53ad3ef1477fcc7b5dbdbf1cb4c0\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1769e9f5cce8a3f9ca50033d23230dc5\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:5.0.0-rc01] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\edb35c9e32da63793c3fdec5fa320026\transformed\glide-5.0.0-rc01\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\919d7c5fbcfe4c36b7d0dc8458092a41\transformed\exoplayer-core-2.19.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.media3:media3-ui:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fbfd8e6f61bfc316aae65e04a06cf54c\transformed\media3-ui-1.3.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fd521379a23582945f269a18a9ef3874\transformed\media3-exoplayer-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media3:media3-datasource:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4c744aea4b44f0f01fd52aef2f8b9643\transformed\media3-datasource-1.3.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-extractor:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\c3698784f919d2b1dc7c6f4a7ba80b87\transformed\media3-extractor-1.3.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-container:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\99ac1248e16171ab91e8e7999d5343e1\transformed\media3-container-1.3.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-decoder:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1e2f42dcedf69b42b762e2050051eb3a\transformed\media3-decoder-1.3.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-database:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\583f6f248692bbc68f7fdcb21ac26736\transformed\media3-database-1.3.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-common:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\81f4b81e08ce60bcc115ce44f44d9adb\transformed\media3-common-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media3:media3-session:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\3d2fe9e70a36241f3574888e714989f1\transformed\media3-session-1.3.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\846f96b67719b6b0358dc943d1b7c5fb\transformed\exoplayer-ui-2.19.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\797005ab5e4c1e4bea3aa88267d629eb\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\b245023465a13fa2cbf9298a1d91bb5b\transformed\recyclerview-1.3.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.7.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\cfd6931adb5f16a6a632932e2f9c2bf5\transformed\media-1.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\f67260f3811216967d4c65650a41a8fd\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\caacb5d117013077ba6dd939065a875a\transformed\fragment-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\d69ab43e3ccd6850828320ff7e73cb1b\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\7100f70982d85b96c46f0496b7becc56\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\7bc7a5b48c08c285c7816e5896abfab2\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\8255cf8f73e0ec2d884b3aa8102e6cd4\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\c49cd9f9e70a62c0cfb6a9c057db283b\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\cf7ed2c7db25c1ed83dad3026c9a2688\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5d6dbb7a2526cb46a310f1fa772a8328\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\c17573ade799759c56baf884a28f8de6\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\064f6efcf72e45025c96c41bb0313fb3\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4432a2afdd19fc85814143f134bfa94c\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\bf2a6d46c92d2b1b015ce44f75d834ab\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.7.2] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\bec455bbbeb034892d017364677755ba\transformed\activity-1.7.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\f4e7914e58ba093567760f9d22f3626d\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5cafcec8fcc73745adcf6a75240f9e71\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\a3baf98b0d086df41fe251371a95edb9\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\113526e2f35dfe8e609cb6eb995d2e11\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4518eb95b521d47a4aeec2cafd9e96f0\transformed\lifecycle-viewmodel-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\d1064dc9575cef45e08548942bb59423\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\532d2db369b546da111460b582949777\transformed\lifecycle-viewmodel-savedstate-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\f6c47861666c723a6e14604b0a167eca\transformed\core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\753d1c5998fcf92d3b35a10f92e94431\transformed\annotation-experimental-1.3.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\2365384ad980976d11b4bd9d48d00571\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1f624a3ec658e1a90eb17b72d8f4e5aa\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fe726d578f90e61f945e51ad06a99ee0\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:5.0.0-rc01] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\45d26649dee274b1a4be0442371b6cc5\transformed\gifdecoder-5.0.0-rc01\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\b517d6943b5e998f5e5eff0c657c502c\transformed\exifinterface-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e6dc352309f6d773a89fb4d56f13b49d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\be6d87ce73c1cf72008410442969a421\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\dcff43c5ac3787e1d0e63b210832c6dc\transformed\exoplayer-extractor-2.19.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-container:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\6a58fd4e32a3670bbc8a519f5c581cbf\transformed\exoplayer-container-2.19.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-datasource:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\deb6368d6615e54f26ea8c7b06d29030\transformed\exoplayer-datasource-2.19.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-decoder:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\d439b9932a1d26b813c2105d8d5eeef2\transformed\exoplayer-decoder-2.19.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-database:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e1b3ff825248c280b95e5fe8686e68d5\transformed\exoplayer-database-2.19.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5ca855e0fabd00aec38ae906702820e4\transformed\exoplayer-common-2.19.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b621581b14be943fef7e9025808a5ef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\dc95db927df936e003ea23f2b843af5c\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4a128805ae54552b7183634231e39ff5\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ae4109ec1e873f2074e4c3a60211a759\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\63166f2e06e790b45e44a8c52ec5b6f3\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+	package
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:1-118:12
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.type.automotive
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:5:5-7:35
+	android:required
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:7:9-32
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:6:9-56
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:10:5-77
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:10:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:11:5-92
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:11:22-89
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:12:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:15:5-77
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:15:22-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:16:22-65
+uses-permission#android.permission.READ_MEDIA_VIDEO
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:17:5-75
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:17:22-72
+uses-permission#android.permission.READ_MEDIA_IMAGES
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:18:5-76
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:18:22-73
+uses-permission#android.permission.READ_MEDIA_AUDIO
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:19:5-75
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:19:22-72
+application
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:21:5-116:19
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1072879069efd070fb6992aa0ec3c2d9\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1072879069efd070fb6992aa0ec3c2d9\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b929ab10fd806b94f86bd527f89dd0a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b929ab10fd806b94f86bd527f89dd0a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e6dc352309f6d773a89fb4d56f13b49d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e6dc352309f6d773a89fb4d56f13b49d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b621581b14be943fef7e9025808a5ef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b621581b14be943fef7e9025808a5ef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:requestLegacyExternalStorage
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:28:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:29:9-35
+	android:label
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:27:9-41
+	android:fullBackupContent
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:25:9-54
+	android:appCategory
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:23:9-36
+	tools:targetApi
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:31:9-29
+	android:icon
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:26:9-43
+	android:allowBackup
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:22:9-35
+	android:theme
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:30:9-49
+	android:dataExtractionRules
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:24:9-65
+meta-data#com.google.android.gms.car.application
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:32:9-34:59
+	android:resource
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:33:13-66
+meta-data#com.android.automotive
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:38:9-40:59
+	android:resource
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:40:13-56
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:39:13-50
+service#com.example.mediaplayer.MyMediaBrowserService
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:42:9-48:19
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:44:13-37
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:43:13-50
+intent-filter#action:name:android.media.browse.MediaBrowserService
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:45:13-47:29
+action#android.media.browse.MediaBrowserService
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:46:17-83
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:46:25-80
+activity#com.example.mediaplayer.Streaming_auto.car.PlayerActivity
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:51:9-55:66
+	android:launchMode
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:54:13-43
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:53:13-36
+	android:theme
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:55:13-63
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:52:13-62
+activity#com.example.mediaplayer.Streaming_auto.car.PlayableFolderActivity
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:56:9-58:39
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:57:13-70
+service#com.example.mediaplayer.Streaming_auto.car.PlaybackService
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:60:9-69:19
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:62:13-36
+	android:foregroundServiceType
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:63:13-58
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:61:13-63
+intent-filter#action:name:android.media.action.MEDIA_PLAY_FROM_SEARCH+action:name:android.media.browse.MediaBrowserService+action:name:androidx.media3.session.MediaLibraryService
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:64:13-68:29
+action#androidx.media3.session.MediaLibraryService
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:65:17-86
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:65:25-83
+action#android.media.action.MEDIA_PLAY_FROM_SEARCH
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:67:17-86
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:67:25-83
+activity#com.example.mediaplayer.player_activity.MusicPlayerActivity
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:71:9-74:40
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:74:13-37
+	android:configChanges
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:73:13-75
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:72:13-64
+activity#com.example.mediaplayer.player_activity.VideoPlayerActivity
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:75:9-78:40
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:78:13-37
+	android:configChanges
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:77:13-75
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:76:13-64
+activity#com.example.mediaplayer.SplashScreen
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:79:9-81:40
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:81:13-37
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:80:13-41
+provider#com.example.mediaplayer.Streaming_auto.car.BitmapContentProvider
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:83:9-86:39
+	android:authorities
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:85:13-50
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:86:13-36
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:84:13-69
+service#com.example.mediaplayer.Streaming_auto.car.AutomotiveService
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:88:9-96:19
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:90:13-36
+	android:foregroundServiceType
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:91:13-58
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:89:13-65
+intent-filter#action:name:android.media.browse.MediaBrowserService+action:name:androidx.media3.session.MediaLibraryService
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:92:13-95:29
+activity#com.example.mediaplayer.MainActivity
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:98:9-100:40
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:100:13-37
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:99:13-41
+activity#com.example.mediaplayer.folder_files_from_storage.MusicFiles
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:101:9-103:40
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:103:13-37
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:102:13-65
+activity#com.example.mediaplayer.folder_files_from_storage.VideoFiles
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:104:9-106:40
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:106:13-37
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:105:13-65
+activity#com.example.mediaplayer.Activity_Permissions
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:107:9-115:20
+	android:exported
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:109:13-36
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:108:13-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:110:13-114:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:111:17-69
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:111:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:113:17-77
+	android:name
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml:113:27-74
+uses-sdk
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1072879069efd070fb6992aa0ec3c2d9\transformed\material-1.9.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1072879069efd070fb6992aa0ec3c2d9\transformed\material-1.9.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b929ab10fd806b94f86bd527f89dd0a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b929ab10fd806b94f86bd527f89dd0a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e5ed6143adbb4e76284add51ce427304\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e5ed6143adbb4e76284add51ce427304\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\44fc53ad3ef1477fcc7b5dbdbf1cb4c0\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\44fc53ad3ef1477fcc7b5dbdbf1cb4c0\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1769e9f5cce8a3f9ca50033d23230dc5\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1769e9f5cce8a3f9ca50033d23230dc5\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:5.0.0-rc01] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\edb35c9e32da63793c3fdec5fa320026\transformed\glide-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:glide:5.0.0-rc01] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\edb35c9e32da63793c3fdec5fa320026\transformed\glide-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\919d7c5fbcfe4c36b7d0dc8458092a41\transformed\exoplayer-core-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\919d7c5fbcfe4c36b7d0dc8458092a41\transformed\exoplayer-core-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media3:media3-ui:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fbfd8e6f61bfc316aae65e04a06cf54c\transformed\media3-ui-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-ui:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fbfd8e6f61bfc316aae65e04a06cf54c\transformed\media3-ui-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fd521379a23582945f269a18a9ef3874\transformed\media3-exoplayer-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fd521379a23582945f269a18a9ef3874\transformed\media3-exoplayer-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4c744aea4b44f0f01fd52aef2f8b9643\transformed\media3-datasource-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4c744aea4b44f0f01fd52aef2f8b9643\transformed\media3-datasource-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\c3698784f919d2b1dc7c6f4a7ba80b87\transformed\media3-extractor-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\c3698784f919d2b1dc7c6f4a7ba80b87\transformed\media3-extractor-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\99ac1248e16171ab91e8e7999d5343e1\transformed\media3-container-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\99ac1248e16171ab91e8e7999d5343e1\transformed\media3-container-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1e2f42dcedf69b42b762e2050051eb3a\transformed\media3-decoder-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1e2f42dcedf69b42b762e2050051eb3a\transformed\media3-decoder-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\583f6f248692bbc68f7fdcb21ac26736\transformed\media3-database-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\583f6f248692bbc68f7fdcb21ac26736\transformed\media3-database-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\81f4b81e08ce60bcc115ce44f44d9adb\transformed\media3-common-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\81f4b81e08ce60bcc115ce44f44d9adb\transformed\media3-common-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-session:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\3d2fe9e70a36241f3574888e714989f1\transformed\media3-session-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-session:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\3d2fe9e70a36241f3574888e714989f1\transformed\media3-session-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\846f96b67719b6b0358dc943d1b7c5fb\transformed\exoplayer-ui-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\846f96b67719b6b0358dc943d1b7c5fb\transformed\exoplayer-ui-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\797005ab5e4c1e4bea3aa88267d629eb\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\797005ab5e4c1e4bea3aa88267d629eb\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\b245023465a13fa2cbf9298a1d91bb5b\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\b245023465a13fa2cbf9298a1d91bb5b\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.7.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\cfd6931adb5f16a6a632932e2f9c2bf5\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.media:media:1.7.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\cfd6931adb5f16a6a632932e2f9c2bf5\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\f67260f3811216967d4c65650a41a8fd\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\f67260f3811216967d4c65650a41a8fd\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.fragment:fragment:1.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\caacb5d117013077ba6dd939065a875a\transformed\fragment-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\caacb5d117013077ba6dd939065a875a\transformed\fragment-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\d69ab43e3ccd6850828320ff7e73cb1b\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\d69ab43e3ccd6850828320ff7e73cb1b\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\7100f70982d85b96c46f0496b7becc56\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\7100f70982d85b96c46f0496b7becc56\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\7bc7a5b48c08c285c7816e5896abfab2\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\7bc7a5b48c08c285c7816e5896abfab2\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\8255cf8f73e0ec2d884b3aa8102e6cd4\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\8255cf8f73e0ec2d884b3aa8102e6cd4\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\c49cd9f9e70a62c0cfb6a9c057db283b\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\c49cd9f9e70a62c0cfb6a9c057db283b\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\cf7ed2c7db25c1ed83dad3026c9a2688\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\cf7ed2c7db25c1ed83dad3026c9a2688\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5d6dbb7a2526cb46a310f1fa772a8328\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5d6dbb7a2526cb46a310f1fa772a8328\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\c17573ade799759c56baf884a28f8de6\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\c17573ade799759c56baf884a28f8de6\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\064f6efcf72e45025c96c41bb0313fb3\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\064f6efcf72e45025c96c41bb0313fb3\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4432a2afdd19fc85814143f134bfa94c\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4432a2afdd19fc85814143f134bfa94c\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\bf2a6d46c92d2b1b015ce44f75d834ab\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\bf2a6d46c92d2b1b015ce44f75d834ab\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.7.2] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\bec455bbbeb034892d017364677755ba\transformed\activity-1.7.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.7.2] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\bec455bbbeb034892d017364677755ba\transformed\activity-1.7.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\f4e7914e58ba093567760f9d22f3626d\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\f4e7914e58ba093567760f9d22f3626d\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5cafcec8fcc73745adcf6a75240f9e71\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5cafcec8fcc73745adcf6a75240f9e71\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\a3baf98b0d086df41fe251371a95edb9\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\a3baf98b0d086df41fe251371a95edb9\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\113526e2f35dfe8e609cb6eb995d2e11\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\113526e2f35dfe8e609cb6eb995d2e11\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4518eb95b521d47a4aeec2cafd9e96f0\transformed\lifecycle-viewmodel-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4518eb95b521d47a4aeec2cafd9e96f0\transformed\lifecycle-viewmodel-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\d1064dc9575cef45e08548942bb59423\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\d1064dc9575cef45e08548942bb59423\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\532d2db369b546da111460b582949777\transformed\lifecycle-viewmodel-savedstate-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\532d2db369b546da111460b582949777\transformed\lifecycle-viewmodel-savedstate-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\f6c47861666c723a6e14604b0a167eca\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\f6c47861666c723a6e14604b0a167eca\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\753d1c5998fcf92d3b35a10f92e94431\transformed\annotation-experimental-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\753d1c5998fcf92d3b35a10f92e94431\transformed\annotation-experimental-1.3.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\2365384ad980976d11b4bd9d48d00571\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\2365384ad980976d11b4bd9d48d00571\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1f624a3ec658e1a90eb17b72d8f4e5aa\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1f624a3ec658e1a90eb17b72d8f4e5aa\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fe726d578f90e61f945e51ad06a99ee0\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fe726d578f90e61f945e51ad06a99ee0\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:5.0.0-rc01] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\45d26649dee274b1a4be0442371b6cc5\transformed\gifdecoder-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:5.0.0-rc01] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\45d26649dee274b1a4be0442371b6cc5\transformed\gifdecoder-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\b517d6943b5e998f5e5eff0c657c502c\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\b517d6943b5e998f5e5eff0c657c502c\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e6dc352309f6d773a89fb4d56f13b49d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e6dc352309f6d773a89fb4d56f13b49d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\be6d87ce73c1cf72008410442969a421\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\be6d87ce73c1cf72008410442969a421\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\dcff43c5ac3787e1d0e63b210832c6dc\transformed\exoplayer-extractor-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\dcff43c5ac3787e1d0e63b210832c6dc\transformed\exoplayer-extractor-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-container:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\6a58fd4e32a3670bbc8a519f5c581cbf\transformed\exoplayer-container-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-container:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\6a58fd4e32a3670bbc8a519f5c581cbf\transformed\exoplayer-container-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-datasource:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\deb6368d6615e54f26ea8c7b06d29030\transformed\exoplayer-datasource-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-datasource:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\deb6368d6615e54f26ea8c7b06d29030\transformed\exoplayer-datasource-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-decoder:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\d439b9932a1d26b813c2105d8d5eeef2\transformed\exoplayer-decoder-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-decoder:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\d439b9932a1d26b813c2105d8d5eeef2\transformed\exoplayer-decoder-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-database:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e1b3ff825248c280b95e5fe8686e68d5\transformed\exoplayer-database-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-database:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e1b3ff825248c280b95e5fe8686e68d5\transformed\exoplayer-database-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5ca855e0fabd00aec38ae906702820e4\transformed\exoplayer-common-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5ca855e0fabd00aec38ae906702820e4\transformed\exoplayer-common-2.19.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b621581b14be943fef7e9025808a5ef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4b621581b14be943fef7e9025808a5ef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\dc95db927df936e003ea23f2b843af5c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\dc95db927df936e003ea23f2b843af5c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4a128805ae54552b7183634231e39ff5\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\4a128805ae54552b7183634231e39ff5\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ae4109ec1e873f2074e4c3a60211a759\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ae4109ec1e873f2074e4c3a60211a759\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\63166f2e06e790b45e44a8c52ec5b6f3\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\63166f2e06e790b45e44a8c52ec5b6f3\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\aggadi.manideep\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\MediaPlayer\mediaplayer\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.exoplayer:exoplayer-core:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\919d7c5fbcfe4c36b7d0dc8458092a41\transformed\exoplayer-core-2.19.1\AndroidManifest.xml:24:5-79
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fd521379a23582945f269a18a9ef3874\transformed\media3-exoplayer-1.3.1\AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\fd521379a23582945f269a18a9ef3874\transformed\media3-exoplayer-1.3.1\AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-common:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\81f4b81e08ce60bcc115ce44f44d9adb\transformed\media3-common-1.3.1\AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-common:1.3.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\81f4b81e08ce60bcc115ce44f44d9adb\transformed\media3-common-1.3.1\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5ca855e0fabd00aec38ae906702820e4\transformed\exoplayer-common-2.19.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\5ca855e0fabd00aec38ae906702820e4\transformed\exoplayer-common-2.19.1\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.exoplayer:exoplayer-core:2.19.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\919d7c5fbcfe4c36b7d0dc8458092a41\transformed\exoplayer-core-2.19.1\AndroidManifest.xml:24:22-76
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e6dc352309f6d773a89fb4d56f13b49d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\e6dc352309f6d773a89fb4d56f13b49d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#com.example.mediaplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#com.example.mediaplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\1a68d17af36dbcea950a8a66c430e2e1\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\aggadi.manideep\Downloads\gradle-8.7-bin\gradle-8.7\caches\transforms-3\766775ef9b8a5fb948a8a3da34e7cf54\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
