@@ -116,25 +116,7 @@ public class streaming extends Fragment {
 
 
 
-      /*  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            // Check if VIBRATE (for notifications) permission is not granted
-            if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.VIBRATE)
-                    != PackageManager.PERMISSION_GRANTED) {
-                // Request VIBRATE permission
-                ActivityCompat.requestPermissions(getActivity(),
-                        new String[]{Manifest.permission.VIBRATE},
-                        1);
-            }
 
-            // Check if WAKE_LOCK permission is not granted
-            if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WAKE_LOCK)
-                    != PackageManager.PERMISSION_GRANTED) {
-                // Request WAKE_LOCK permission
-                ActivityCompat.requestPermissions(getActivity(),
-                        new String[]{Manifest.permission.WAKE_LOCK},
-                        2);
-            }
-        }*/
 
         return view;
 
@@ -161,42 +143,7 @@ public class streaming extends Fragment {
         super.onStop();
     }
 
-   /* @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
 
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        switch (requestCode) {
-            case 1: {
-                // Check if VIBRATE permission is granted
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Permission granted, you can now proceed with your functionality
-                    // For example, start using notifications that require vibration
-                } else {
-                    // Permission denied, handle this according to your app's logic
-                    // You may disable certain features or show an explanation dialog
-                }
-                break;
-            }
-            case 2: {
-                // Check if WAKE_LOCK permission is granted
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Permission granted, you can now proceed with your functionality
-                    // For example, acquire wake locks as needed
-                } else {
-                    // Permission denied, handle this according to your app's logic
-                    // You may disable certain features or show an explanation dialog
-                }
-                break;
-            }
-            // Handle other permissions if needed
-
-            default:
-                // Handle other requestCode cases if any
-                break;
-        }
-
-    }*/
     private void initializeBrowser() {
         browserFuture =
                 new MediaBrowser.Builder(

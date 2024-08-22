@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text1">Thank you for installing</string>
+    <string name="text2">This will track the mp3 files,mp4 files in your phone local storage so for that you have to give permissions </string>
+
+    <string name="current_playlist_name">Current playlist</string>
+    <string name="open_player_content_description">Click to view your play list</string>
+    <string name="added_media_item_format">Added %1$s to playlist</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="play_button">Play</string>
+    <string name="waiting_for_metadata">Waiting for playlist to load…</string>
+
+    <string name="notification_permission_denied">
+    "Without notification access the app can't warn about failed background operations"</string>
+    <string name="notification_content_text">Press on the play button on the media notification if it
+    is still present, otherwise please open the app to start the playback and re-connect the session
+    to the controller</string>
+    <string name="notification_channel_name">Playback cannot be resumed</string>
+    <string name="exo_controls_shuffle_on_description">Play On</string>
+    <string name="exo_controls_shuffle_off_description">Play Off</string>
+    <string name="notification_content_title">Playback cannot be resumed</string>
+
+</resources>

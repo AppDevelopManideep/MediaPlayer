@@ -123,12 +123,7 @@ public class MainStreaming extends AppCompatActivity {
         }
 
 
-      /*  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q &&
-                (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
-                        != PackageManager.PERMISSION_GRANTED ) && (ContextCompat.checkSelfPermission(this, Manifest.permission.WAKE_LOCK)
-                != PackageManager.PERMISSION_GRANTED )  ) {
-            requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS,Manifest.permission.WAKE_LOCK}, 0);
-        }*/
+
 
 
 
@@ -157,46 +152,7 @@ public class MainStreaming extends AppCompatActivity {
         super.onStop();
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
 
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        switch (requestCode) {
-            case 1: {
-                // Check if VIBRATE permission is granted
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Permission granted, you can now proceed with your functionality
-                    // For example, start using notifications that require vibration
-                } else {
-                    // Permission denied, handle this according to your app's logic
-                    // You may disable certain features or show an explanation dialog
-                }
-                break;
-            }
-            case 2: {
-                // Check if WAKE_LOCK permission is granted
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Permission granted, you can now proceed with your functionality
-                    // For example, acquire wake locks as needed
-                } else {
-                    // Permission denied, handle this according to your app's logic
-                    // You may disable certain features or show an explanation dialog
-                }
-                break;
-            }
-            // Handle other permissions if needed
-
-            default:
-                // Handle other requestCode cases if any
-                break;
-        }
-       /* super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (grantResults.length > 0 && (grantResults[0] != PackageManager.PERMISSION_GRANTED || grantResults[1]!=PackageManager.PERMISSION_GRANTED)) {
-            Toast.makeText(getApplicationContext(), R.string.notification_permission_denied, Toast.LENGTH_LONG)
-                    .show();
-        }*/
-    }
 
     private void initializeBrowser() {
         browserFuture =

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/gridbackground"
+
+    android:weightSum="3"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.20"
+        android:layout_height="25sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/log"
+        android:id="@+id/vedioimageitem"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.80"
+        android:id="@+id/itemvedeo_name"
+        android:text="1 item"
+        android:textSize="16sp"
+        android:padding="4dp"/>
+
+
+</LinearLayout>
